@@ -1,0 +1,94 @@
+@font-face {
+    font-family: TerminalFont;
+    src: url(ShareTechMono-Regular.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+#background_div {
+
+
+    z-index: 500;
+    position: absolute;
+    width:1920px;
+    height:1080px;
+    margin: none;
+
+}
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+#term-cont {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#terminal {
+
+    color: #FFF;
+    /*background-color: aqua;*/
+    width: 1000px;
+    height: 730px;
+    font-size: 30px;
+    margin-top: 125px;
+    line-height: 40px;
+    font-family: TerminalFont;
+    color: rgb(44, 255, 44);
+    text-transform: uppercase;
+
+}
+
+.terminal-text {
+
+    word-break: break-word;
+
+}
+
+#log-name-break {
+
+    display: none;
+
+}
+
+#user-arrow {
+
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 8px;
+
+}
+
+.rollinput {
+
+    font-size: 30px;
+    line-height: 40px;
+    font-family: TerminalFont;
+    color: rgb(44, 255, 44);
+    text-transform: uppercase;
+    background: transparent!important;
+    border: none;
+    display: none;
+
+}
+
+.rollinput:focus {
+
+    border: none;
+    text-decoration: none;
+    outline: none;
+
+}

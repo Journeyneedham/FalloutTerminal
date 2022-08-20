@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="terminal.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        
+    </head>
+    <body>
+
+        <div id="background_div">
+            <div id="term-cont">
+                
+                <div id="terminal">
+
+                    
+                    <div class="terminal-text" data-text="WELCOME TO ZETA TECHNOLOGIES (TM) TERMINAL" id="welcome-message"></div>
+                    <div class="terminal-text" data-text="> ls" id="security_1"></div>
+                    <div class="terminal-text" data-text="total files: " id="total-files"><span id="log_total"></span></div>
+                    <br>
+                    <div class="terminal-text" data-text="-rw-rw-r--    alexander h. feb 16 2134 alexander_log_1.log" id="log-1"></div>
+                    <br>
+                    <div class="terminal-text" data-text="-rw-rw-r--    alexander hover feb 16 2134 00:19 alexander_log_1.log" id="log-2"></div>
+                    <br>
+                    <div class="terminal-text" data-text="roll investigation to view..." id="roll"></div>
+                    <div class="terminal-text" data-text="Alex Hover" id="full-log-name"></div>
+                    <br id="log-name-break">
+                    <div class="terminal-text" data-text="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was 
+                    born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, 
+                    the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not
+                     know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                      to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure." id="full-log-1"></div>
+                    <div class="terminal-text" data-text="what was your roll?" id="what-was-roll"></div>
+                    <br>
+                    <span class="terminal-text" data-text="> " id="user-arrow"></span><input onblur="this.focus()" class='rollinput terminal-text' name="fname" autofocus>
+
+
+                </div>
+                
+                
+            </div>
+            
+        </div>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="terminal_button_glow.mp4" type="video/mp4">
+        </video>
+
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+    </body>
+    <script src="terminal.js"></script>
+</html>
