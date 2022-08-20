@@ -3,14 +3,17 @@
 /* ------------------ stuff for terminal typing -----------------*/
 async function typeSentence(eleRef, type) {
 sentence = eleRef.dataset.text;
-delay = 10;
+delay = 40;
+console.log(delay)
+console.log(type)
 if (type == 'log') {
 
-    delay = 5;
+    delay = 20;
 
 } else if (type == 'full-log') {
 
     delay = 5;
+    
 
 }
 const letters = sentence.split("");
@@ -60,14 +63,14 @@ rollInput.addEventListener("keypress", async function(event) {
             return new Promise(resolve => setTimeout(resolve, 1000));
         })()
         await typeSentence(document.getElementById('welcome-message'), 'log');
-        await typeSentence(document.getElementById('full-log-name', 'full-log'));
+        await typeSentence(document.getElementById('full-log-name'), 'full-log');
         await (async function() {
             
             document.getElementById('log-name-break').style.display = 'block';
             return "hello"
         
         })();
-        await typeSentence(document.getElementById('full-log-1', 'full-log'));
+        await typeSentence(document.getElementById('full-log-1'), 'full-log');
         
         await typeSentence(document.getElementById('user-arrow'));
         await (async function() {
@@ -93,7 +96,7 @@ window.onload = async function() {
     await typeSentence(document.getElementById('welcome-message'), 'log');
     await typeSentence(document.getElementById('security_1'));
     await typeSentence(document.getElementById('total-files'));
-    await typeSentence(document.getElementById('log-1', 'log'));
+    await typeSentence(document.getElementById('log-1') , 'log');
     await typeSentence(document.getElementById('roll'));
     await typeSentence(document.getElementById('what-was-roll'));
     await typeSentence(document.getElementById('user-arrow'));
